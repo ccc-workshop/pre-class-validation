@@ -1,0 +1,5 @@
+# Rename to .github/CODEOWNERS in Lab 4 and replace the handles.
+# The last matching line wins.
+*            @your-handle
+/sql/        @your-handle @teammate-handle
+/docs/       @your-handle

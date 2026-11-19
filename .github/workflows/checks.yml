@@ -1,0 +1,26 @@
+name: Data checks
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  checks:
+    name: sql-and-python-checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: SQL house rules
+        run: python scripts/check_sql.py
+
+      - name: Python unit tests
+        run: python -m unittest discover -s python/tests -v

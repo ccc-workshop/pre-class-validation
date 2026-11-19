@@ -1,0 +1,22 @@
+# Never commit real data or secrets
+data/raw/
+data/exports/
+*.xlsx
+*.parquet
+.env
+*.pem
+*.pfx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Editors and OS
+.vscode/settings.json
+.DS_Store
+Thumbs.db
