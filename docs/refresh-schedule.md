@@ -1,5 +1,5 @@
 # Refresh schedule
 
-Nightly refresh time: 02:00 ET
+Nightly refresh time: 03:15 ET
 
-Owner: Data team
+Owner: Jay Peterson
